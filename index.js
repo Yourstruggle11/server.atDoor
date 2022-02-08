@@ -2,6 +2,7 @@ import express from "express";
 import env from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
+import dbConnection from "./config/db.js";
 
 
 // import 404 route handler and stack provider
@@ -19,6 +20,10 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(morgan('dev'));
+
+
+//connect to the database
+dbConnection();
 
 
 
