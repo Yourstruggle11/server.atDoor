@@ -6,11 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon index.js"
+    "start": "npx nodemon index.js",
+    "format": "prettier --write ./**/*.{js,}"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yourstruggle11/atDoor.git"
+    "url": "git+https://github.com/Yourstruggle11/server.atDoor.git"
   },
   "keywords": [
     "E-com"
@@ -18,9 +19,9 @@
   "author": "Souvik Sen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yourstruggle11/atDoor/issues"
+    "url": "https://github.com/Yourstruggle11/server.atDoor/issues"
   },
-  "homepage": "https://github.com/Yourstruggle11/atDoor#readme",
+  "homepage": "https://github.com/Yourstruggle11/server.atDoor#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",

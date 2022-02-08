@@ -10,6 +10,7 @@ import { NotFound, errorhandler } from "./middleware/errorHandling.js"
 
 //import All routes
 import homeRoute from "./routes/homeRoute.js"
+import userAccount from "./routes/userAccountRoute.ja"
 
 
 const app = express();
@@ -28,8 +29,12 @@ dbConnection();
 
 
 // -------ALL ROUTES-------//
+
 // home route
 app.use("/", homeRoute);
+
+// user account route
+app.use("/users", userAccount);
 
 
 
